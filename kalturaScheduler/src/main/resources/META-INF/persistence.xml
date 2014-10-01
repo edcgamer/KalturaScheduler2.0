@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="QuartzPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <shared-cache-mode>DISABLE_SELECTIVE</shared-cache-mode>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:10.64.27.138:1521:des07"/>
+      <property name="javax.persistence.jdbc.user" value="reportesCostos"/>
+      <property name="javax.persistence.jdbc.password" value="r3p0rt3c0st0s_8802"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
